@@ -255,6 +255,7 @@ button[type=submit]{
     }
     .step.row .col-3{
         padding-top: 10px;
+        padding-left: 10px;
     }
     .step.row::before{
         width: 10px;
@@ -268,13 +269,11 @@ button[type=submit]{
     }
     .step_title{
         font-size: 20px;
-        padding-left: 5px;
         line-height: 0;
     }
     .step_text{
         font-size: 16px;
         line-height: 18px;
-        padding-left: 5px;
         margin: -5px 0 0;
     }
     #about{
