@@ -247,7 +247,7 @@ button[type=submit]{
         padding-left: 25px;
         margin-bottom: 0;
         align-items: flex-start;
-        min-height: 90px;
+        min-height: 95px;
     }
     .step img{
         width: 70px;
