@@ -1,0 +1,328 @@
+body{
+    margin: 0px;
+    font-family: 'Avenir Next Cyr Regular';
+    font-size: 20px;
+}
+h2{  
+    font-size: 36px;
+}
+.steps_title{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Avenir Next Cyr Bold';
+}
+.title{
+    text-align: center;
+    font-family: 'Avenir Next Cyr Bold';
+}
+a{
+    color: #fefffc;
+}
+a:hover{
+    text-decoration: underline!important;
+}
+#header{
+    background-image: url('../img/header_background.png');
+}
+#top_row{
+    background-color: #910d0d;
+    font-family: 'Avenir Next Cyr Bold';
+}
+#top_row a{
+    text-decoration: none;
+}
+.menu ul{
+    list-style: none;
+    float: right;
+}
+.menu ul li{
+    display: inline-block;
+    padding-left: 30px;
+}
+.hamburger{
+    fill: #fefffc;
+    display: none;
+}
+#header{
+    color: #fefffc;
+    text-align: center;
+    padding-top: 70px;
+    font-weight: 300;
+}
+#header h2{
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 42px;
+    font-weight: 700;
+}
+#header p{
+    font-size: 36px;
+    font-family: 'Avenir Next Cyr Thin';
+}
+.sub_title{
+    margin-top: -25px;
+}
+#header .header_sub{
+    font-family: 'Avenir Next Cyr Thin Italic';
+}
+#header img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.step{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.step.row .col-3{
+    padding-top: 20px;
+}
+.step.row{
+    position: relative;
+    padding-left: 50px;
+}
+.step.row::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #a9abb5;
+}
+.step.row::after{
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: calc(50% + 8px);
+    width: 1px;
+    height: calc(100% + 16px);
+    background-color: #a9abb5;
+}
+.step.row:last-child::after{
+    display: none;
+}
+.step_title{
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 32px;
+}
+.step_text{
+    font-family: 'Avenir Next Cyr Bold';
+    margin-top: -25px;
+}
+.step img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#about{
+    background-color: #4e7c40;
+    padding: 30px 0;
+}
+#about p{
+    text-indent: 15px;
+    font-size: 30px;
+    padding: 0px 50px;
+}
+#link{
+    background-color: #303030;
+    padding: 20px 0;
+    text-align: center;
+}
+.form input, .form textarea{
+    font-family: 'Avenir Next Cyr Regular';
+    font-size: 24px;
+    background-color: #d8d8d8;
+    padding: 15px;
+}
+.form input::placeholder, 
+.form textarea::placeholder{
+    color: #000;
+}
+.form{
+    padding: 0px 50px;
+}
+.form p{
+    display: flex;
+}
+.form label{
+    font-size: 24px;
+    padding-right: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 20%;
+}
+.form textarea{
+    width: 75%;
+    resize: none;
+    height: 200px;
+}
+.form .submit{
+    padding-left: 20%;
+}
+button[type=submit]{
+    font-family: 'Avenir Next Cyr Regular';
+    font-size: 24px;
+    padding: 5px 50px;
+    background-color: #910d0d;
+    color: #fefffc;
+}
+#footer{
+    background-color: #4d4d4d;
+}
+.footer_right{
+    text-align: right;
+}
+.footer_left{
+    color: #fefffc;
+}
+.scrollup{
+    scroll-behavior: smooth;
+}
+@media screen and (min-width:1300px){
+    #steps{
+        padding: 0 150px;
+    }
+}
+@media screen and (max-width:767px){
+    body{
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    #top_row{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .menu{
+        text-align: right;
+        margin-top: -45px;
+    }
+    .nav ul{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hamburger{
+        display: inline-block;
+        padding: 10px 0 0;
+    }
+    .nav{
+        display: none;
+    }
+    #top_row p{
+        margin: 10px 0;
+    }
+    .menu ul li{
+        line-height: 30px;
+    }
+    #header img {
+        width: 100px;
+        height: 100px;
+    }
+    #header h2 {
+        font-size: 32px;
+    }
+    #header p{
+        font-size: 28px;
+    }
+    #header .header_sub{
+        font-size: 20px;
+    }
+    #steps{
+        padding: 0 0 20px;
+    }
+    .steps_title{
+        font-size: 20px;
+    }
+    .step.row{
+        padding-left: 25px;
+        margin-bottom: 0;
+        align-items: flex-start;
+        min-height: 90px;
+    }
+    .step img{
+        width: 70px;
+        height: 70px;
+    }
+    .step.row .col-3{
+        padding-top: 10px;
+    }
+    .step.row::before{
+        width: 10px;
+        height: 10px;
+        left: 15px;
+    }
+    .step.row::after{
+        left: 19px;
+        top: 50%;
+        height: calc(100% + 1px);
+    }
+    .step_title{
+        font-size: 20px;
+        padding-left: 5px;
+        line-height: 0;
+    }
+    .step_text{
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 5px;
+        margin: -5px 0 0;
+    }
+    #about{
+        padding: 0 5px;
+    }
+    #about p {
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    #link a{
+        font-size: 14px;
+    }
+    #contact .title{
+        text-align: left;
+    }
+    .form{
+        padding: 0px;
+    }
+    .form input, .form textarea{
+        font-size: 18px;
+        padding: 10px
+    }
+    .form label{
+        font-size: 18px;
+        text-align: left;
+        width: auto;
+        padding-bottom: 10px;
+        display: block;
+    }
+    .form textarea{
+        width: auto;
+    }
+    .form p{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .form .submit{
+        padding-left: 0px;
+        display: block;
+    }
+    button[type=submit]{
+        font-size: 18px;
+        padding: 5px 30px;
+    }
+    .footer_left{
+        font-size: 16px;
+    }
+    .sub_title{
+        margin-top: -20px;
+    }
+}
